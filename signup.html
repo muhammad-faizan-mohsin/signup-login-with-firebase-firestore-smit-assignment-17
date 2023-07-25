@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="row login-container justify-content-center align-items-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="user-img">
+                                <img src="./images/user.png" alt="">
+                            </div>
+
+                            <article>
+                                <h1>Signup</h1>
+                            </article>
+
+                            <div>
+                                <div class="mb-3">
+                                    <div class="wave-group">
+                                        <input required="" type="text" class="input" id="email-name">
+                                        <span class="bar"></span>
+                                        <label class="label">
+                                            <span class="label-char" style="--index: 0">E</span>
+                                            <span class="label-char" style="--index: 1">n</span>
+                                            <span class="label-char" style="--index: 2">t</span>
+                                            <span class="label-char" style="--index: 3">e</span>
+                                            <span class="label-char" style="--index: 4">r</span>&nbsp;
+                                            <span class="label-char" style="--index: 5">Y</span>
+                                            <span class="label-char" style="--index: 6">o</span>
+                                            <span class="label-char" style="--index: 7">u</span>
+                                            <span class="label-char" style="--index: 8">r</span>&nbsp;
+                                            <span class="label-char" style="--index: 9">N</span>
+                                            <span class="label-char" style="--index: 10">a</span>
+                                            <span class="label-char" style="--index: 11">m</span>
+                                            <span class="label-char" style="--index: 12">e</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="mb-3">
+                                    <div class="wave-group">
+                                        <input required="" type="text" class="input" id="email-input">
+                                        <span class="bar"></span>
+                                        <label class="label">
+                                            <span class="label-char" style="--index: 0">E</span>
+                                            <span class="label-char" style="--index: 1">n</span>
+                                            <span class="label-char" style="--index: 2">t</span>
+                                            <span class="label-char" style="--index: 3">e</span>
+                                            <span class="label-char" style="--index: 4">r</span>&nbsp;
+                                            <span class="label-char" style="--index: 5">Y</span>
+                                            <span class="label-char" style="--index: 6">o</span>
+                                            <span class="label-char" style="--index: 7">u</span>
+                                            <span class="label-char" style="--index: 8">r</span>&nbsp;
+                                            <span class="label-char" style="--index: 9">E</span>
+                                            <span class="label-char" style="--index: 10">m</span>
+                                            <span class="label-char" style="--index: 11">a</span>
+                                            <span class="label-char" style="--index: 12">i</span>
+                                            <span class="label-char" style="--index: 13">l</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="mb-3">
+                                    <div class="wave-group">
+                                        <input required="" class="input" id="pass-input" type="password">
+                                        <span class="bar"></span>
+                                        <label class="label">
+                                            <span class="label-char" style="--index: 0">E</span>
+                                            <span class="label-char" style="--index: 1">n</span>
+                                            <span class="label-char" style="--index: 2">t</span>
+                                            <span class="label-char" style="--index: 3">e</span>
+                                            <span class="label-char" style="--index: 4">r</span>&nbsp;
+                                            <span class="label-char" style="--index: 5">Y</span>
+                                            <span class="label-char" style="--index: 6">o</span>
+                                            <span class="label-char" style="--index: 7">u</span>
+                                            <span class="label-char" style="--index: 8">r</span>&nbsp;
+                                            <span class="label-char" style="--index: 9">P</span>
+                                            <span class="label-char" style="--index: 10">a</span>
+                                            <span class="label-char" style="--index: 11">s</span>
+                                            <span class="label-char" style="--index: 12">s</span>
+                                            <span class="label-char" style="--index: 13">w</span>
+                                            <span class="label-char" style="--index: 14">o</span>
+                                            <span class="label-char" style="--index: 15">r</span>
+                                            <span class="label-char" style="--index: 16">d</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p style="color: white;">Forgot Password?</p>
+                                <div><button class="btn btn-primary my-btn"
+                                        style="font-weight: bolder;"  id="RegisterBtn">Register</button></div>
+                                <a href="./index.html" class="anchor">
+                                    <p class="signup-p">Alredy Have An Account?<span>Login</span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script  type="module" src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

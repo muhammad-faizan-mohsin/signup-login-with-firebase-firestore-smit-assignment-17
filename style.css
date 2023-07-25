@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #060125;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./images/background.png);
+ height: 100vh;
+  }
+  .main{
+    position: relative;
+
+  }
+  .navbar{
+    margin: 15px 30px 15px 30px;
+    border-radius: 20px;
+    background-color: #060125;
+
+  }
+  p{
+    margin: 2px !important;
+  }
+.nav-bg{
+    background-color: #040118 !important;
+}
+.navbar-brand img{
+    width: 60px;
+}
+.card-box{
+    display: flex;
+    flex: 1;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.card{
+    /* flex: 0.33; */
+    margin: 40px;
+    padding: 20px;
+    background-color: #060125 !important;
+    box-shadow: rgba(255, 255, 255, 0.11) 0px 10px 36px 0px, rgba(255, 255, 255, 0.247) 0px 0px 0px 1px;
+    color: white;
+    padding: 20px;
+}
+.card img{
+    width: 100% !important;
+    height:  100% !important;
+}
+.card-text{
+    font-weight: bold;
+    text-align: center;
+}
+/* @media screen and (max-width:800px) {
+    .card-box{
+        display: block;
+    }
+} */
+.my-btn {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 100%;
+    height: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+  
+  .my-btn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  
+  }
+  
+.p-color{
+    color: #c747a4;
+}
+  .my-btn:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+  
+  }
+  
+  .my-btn:hover::before {
+    filter: blur(20px);
+  
+  }
+  
+  .my-btns:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+  .container-btn {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+ display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .container-btn input[type=radio] {
+    display: none;
+  }
+  
+  .input-btn:is(:checked) + .neon-btn .span {
+    inset: 2px;
+    background-color: #4090b5;
+    background: repeating-linear-gradient(to bottom, transparent 0%, #4090b5 1px, #4090b5 3px, #4090b5 5px, #4090b5 4px, transparent 0.5%), repeating-linear-gradient(to left, hsl(295, 60%, 12%) 100%, hsl(295, 60%, 12%) 100%);
+    box-shadow: inset 0 40px 20px hsl(296, 59%, 10%);
+  }
+  
+  .input-btn:is(:checked) + .neon-btn .txt {
+    text-shadow: 2px 4px 1px #9e30a9, 2px 2px 1px #4090b5, 0 0 20px rgba(255, 255, 255, 0.616);
+    color: rgb(255, 255, 255);
+    animation: colorchange 0.3s ease;
+  }
+  
+  .input-btn:is(:checked) + .neon-btn::before {
+    animation-duration: 0.6s;
+  }
+  
+  .input-btn:is(:checked) + .neon-btn::after {
+    animation-duration: 0.6s;
+  }
+  
+  .neon-btn {
+  
+margin: 20px !important;
+
+    width: 45%;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 5em;
+
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+    -webkit-clip-path: polygon(6% 0, 93% 0, 100% 8%, 100% 86%, 90% 89%, 88% 100%, 5% 100%, 0% 85%);
+    clip-path: polygon(6% 0, 93% 0, 100% 8%, 100% 86%, 90% 89%, 88% 100%, 5% 100%, 0% 85%);
+  }
+  
+  .neon-btn .span {
+    display: flex;
+    -webkit-clip-path: polygon(6% 0, 93% 0, 100% 8%, 100% 86%, 90% 89%, 88% 100%, 5% 100%, 0% 85%);
+    clip-path: polygon(6% 0, 93% 0, 100% 8%, 100% 86%, 90% 89%, 88% 100%, 5% 100%, 0% 85%);
+    position: absolute;
+    inset: 1px;
+    background-color: #040118;
+    z-index: 1;
+  }
+  
+  .neon-btn .txt {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+    font-size: 1em;
+    transition: all ease-in-out 2s linear;
+    text-shadow: 0px 0px 1px #4090b5, 0px 0px 1px #9e30a9, 0 0 1px white;
+  }
+  
+  .neon-btn::before {
+    content: "";
+    position: absolute;
+ width: 100%;
+    aspect-ratio: 1.5/1;
+    box-shadow: -17px -19px 20px #9e30a9;
+    background-image: conic-gradient(#9e30a9, transparent, transparent, transparent, transparent, transparent, transparent, #9e30a9);
+    animation: rotate 4s linear infinite -2s;
+  }
+  
+  .neon-btn::after {
+    content: "";
+    position: absolute;
+ width: 100%;
+    aspect-ratio: 1.5/1;
+    box-shadow: -17px -19px 10px #4090b5;
+    background-image: conic-gradient(#4090b5, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #4090b5);
+    animation: rotate 4s linear infinite;
+  }
+  .questions{
+    margin-bottom: 20px;
+
+  }
+  .questions p{
+    background-color: #040118;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+font-weight: bolder;
+font-size: larger;
+box-shadow: rgba(255, 255, 255, 0.11) 0px 10px 36px 0px, rgba(255, 255, 255, 0.247) 0px 0px 0px 0px;
+
+  }
+  .questions p span{
+    color: #c747a4; 
+  }
+  .main-div{
+    margin-top: 60px;
+  }
+
+  .my-btns {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width:10%;
+    height: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    margin-top: 10px;
+    font-weight: bolder;
+    margin: 30px 10px 10px 10px;
+  }
+  
+  .my-btns:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+  
+  }
+    .my-btns:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+  
+  }
+  
+  .my-btns:hover::before {
+    filter: blur(20px);
+  
+  }
+  
+  .my-btns:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+  .container-btn {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+ display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .next-btn-div{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .timer-div{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .timer-div p{
+    background-color: #9e30a9;
+    padding:  7px 10px 7px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.11) 0px 10px 36px 0px, rgba(255, 255, 255, 0.247) 0px 0px 0px 1px;
+
+  }
+  .popup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff9f;
+    display: none;
+}
+
+
+
+.post-main{
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes colorchange {
+    0% {
+      text-shadow: 0px 0px 0px #9e30a9, 0px 0px 0px #4090b5, 0 0 0px rgba(255, 255, 255, 0.616);
+    }
+  
+    50% {
+      text-shadow: -6px 5px 1px #9e30a9, 5px 11px 1px #4090b5, 0 0 20px rgba(255, 255, 255, 0.616);
+    }
+  
+    to {
+      text-shadow: 2px 4px 1px #9e30a9, 2px 2px 1px #4090b5, 0 0 20px rgba(255, 255, 255, 0.616);
+    }
+  }
+  
+  @keyframes backgroundchange {
+    0% {
+      background-color: transparent;
+    }
+  
+    50% {
+      background-color: #4090b5;
+    }
+  
+    to {
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (max-width:1000px) {
+    .neon-btn {
+            width: 100%;
+  }
+}
+
+@media screen and (max-width:650px) {
+    .my-btns {
+        width: 25%;
+    }
+    .neon-btn {
+ 
+          height: 100%;}
+}
